@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
@@ -67,7 +66,6 @@ const Applayout = () => {
 				{isGroupChatBox && <GroupChatBox />}
 			</div>
 			{isLoading && <Loading />}
-			{/* <Footer /> */}
 		</div>
 	);
 };
